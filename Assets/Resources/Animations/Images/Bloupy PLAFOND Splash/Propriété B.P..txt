@@ -1,0 +1,4 @@
+Lorsque Bloupy (en l'air) touche le plafond, il se "colle" à celui-ci et glisse sur quelques blocs avant de retomber.
+Bloupy glisse toujours sur une distance de 3 block et retombe toujours au niveau du coin inférieur droit dans un angle de 45°. 
+Cette propriété lui permet d'envisager la plateforme differement et permet de considérer le contact avec le sol non pas comme quelque chose qui va le restreindre mais au contraire s'affranchir (plus ou moins) de la gravité ou encore de traverser des précipices normalement impossible pour un mario par exemple.
+Il prend une certaine vitesse lorsqu'il se retrouve dans cette situation.

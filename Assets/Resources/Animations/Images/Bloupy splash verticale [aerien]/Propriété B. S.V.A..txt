@@ -1,0 +1,2 @@
+(En l'air) Lorsque Bloupy rentre en contact avec un mur il s'étale et rebondit vers le haut (du côté opposé).
+Voir si Bloupy recule (une case ou +) ou non.
