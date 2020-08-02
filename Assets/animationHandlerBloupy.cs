@@ -91,7 +91,7 @@ public class animationHandlerBloupy : MonoBehaviour
 
     private void JumpHandler()
     {
-        animator.SetBool("inputJump", Input.GetButtonDown("Jump"));
+       // animator.SetBool("inputJump", Input.GetButtonDown("Jump"));
         animator.SetBool("grounded", movementBloupy.GetIsGrounded());
 
     }
