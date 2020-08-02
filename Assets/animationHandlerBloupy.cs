@@ -27,6 +27,7 @@ public class animationHandlerBloupy : MonoBehaviour
     void FixedUpdate()
     {
         x_movement = Input.GetAxis("Horizontal");         //Get horizontal input of the user
+        JumpHandler();
         NoActionHandler();
         SpeedHandler();
         HorizontalInputHandler();
