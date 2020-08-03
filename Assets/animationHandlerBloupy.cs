@@ -79,13 +79,11 @@ public class animationHandlerBloupy : MonoBehaviour
         if (Input.anyKey)       //bLOUPY IS MOVING
         { 
             noActionT = Time.time;
-            Debug.Log("IF :"+noActionT.ToString());
-            //animator.SetFloat("timeNoAction", Time.time - noActionT);
         }
         else                       //Bloupy is steady
         {
 
-            Debug.Log((Time.time - noActionT).ToString());
+          //  Debug.Log((Time.time - noActionT).ToString());
             animator.SetFloat("timeNoAction", Time.time - noActionT);
         }
     }
@@ -94,5 +92,7 @@ public class animationHandlerBloupy : MonoBehaviour
     {
         animator.SetBool("inputJump", Input.GetButtonDown("Jump"));
         animator.SetBool("grounded", movementBloupy.GetIsGrounded());
+        if(!movementBloupy.GetIsGrounded())
+            Debug.Log(" Is grounded : "+movementBloupy.GetIsGrounded());
     }
 }
