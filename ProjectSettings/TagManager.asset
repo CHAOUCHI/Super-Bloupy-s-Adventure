@@ -6,6 +6,9 @@ TagManager:
   tags:
   - background
   - ground
+  - bloupyHead
+  - bloupyFoot
+  - bloupyNose
   layers:
   - Default
   - TransparentFX

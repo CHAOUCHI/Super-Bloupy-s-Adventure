@@ -1,0 +1,2087 @@
+fileFormatVersion: 2
+guid: c806dd71179ef0746ade79f8cf9be1b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -847255256925026531
+    second: PROTO TILESET_0
+  - first:
+      213: -8773336014523832326
+    second: PROTO TILESET_1
+  - first:
+      213: 7554374455408624587
+    second: PROTO TILESET_2
+  - first:
+      213: 7099784581821261311
+    second: PROTO TILESET_3
+  - first:
+      213: -8564579396507277013
+    second: PROTO TILESET_4
+  - first:
+      213: 3638305661186340008
+    second: PROTO TILESET_5
+  - first:
+      213: -5196968294868804024
+    second: PROTO TILESET_6
+  - first:
+      213: 93344663924569008
+    second: PROTO TILESET_7
+  - first:
+      213: 8169904423557146410
+    second: PROTO TILESET_8
+  - first:
+      213: 6570477960001832696
+    second: PROTO TILESET_9
+  - first:
+      213: -5942276343554009100
+    second: PROTO TILESET_10
+  - first:
+      213: -4005862702656426013
+    second: PROTO TILESET_11
+  - first:
+      213: 2410209253117676853
+    second: PROTO TILESET_12
+  - first:
+      213: -7383689842390768313
+    second: PROTO TILESET_13
+  - first:
+      213: -3537200066092061730
+    second: PROTO TILESET_14
+  - first:
+      213: 1009139510511217998
+    second: PROTO TILESET_15
+  - first:
+      213: -3664122398322478735
+    second: PROTO TILESET_16
+  - first:
+      213: 4584020926718412741
+    second: PROTO TILESET_17
+  - first:
+      213: -8754393687398218006
+    second: PROTO TILESET_18
+  - first:
+      213: -2436945638205390491
+    second: PROTO TILESET_19
+  - first:
+      213: 7690444522616567839
+    second: PROTO TILESET_20
+  - first:
+      213: 2612707590400821416
+    second: PROTO TILESET_21
+  - first:
+      213: -822004007637327943
+    second: PROTO TILESET_22
+  - first:
+      213: -8011747942739328868
+    second: PROTO TILESET_23
+  - first:
+      213: 6929738738962043007
+    second: PROTO TILESET_24
+  - first:
+      213: -8234419578648586646
+    second: PROTO TILESET_25
+  - first:
+      213: -2666727606695822080
+    second: PROTO TILESET_26
+  - first:
+      213: -2520221497489088719
+    second: PROTO TILESET_27
+  - first:
+      213: 9219203066492542656
+    second: PROTO TILESET_28
+  - first:
+      213: -8664381421134598648
+    second: PROTO TILESET_29
+  - first:
+      213: -6629998260496098143
+    second: PROTO TILESET_30
+  - first:
+      213: 1648299720451630127
+    second: PROTO TILESET_31
+  - first:
+      213: -7154128905197103057
+    second: PROTO TILESET_32
+  - first:
+      213: -8578119903605236432
+    second: PROTO TILESET_33
+  - first:
+      213: -4178894916677351581
+    second: PROTO TILESET_34
+  - first:
+      213: 1171730793900354033
+    second: PROTO TILESET_35
+  - first:
+      213: 6537265623290789679
+    second: PROTO TILESET_36
+  - first:
+      213: -170163778141566572
+    second: PROTO TILESET_37
+  - first:
+      213: -7161417864541742958
+    second: PROTO TILESET_38
+  - first:
+      213: 2760419940538475241
+    second: PROTO TILESET_39
+  - first:
+      213: 8566697433015198386
+    second: PROTO TILESET_40
+  - first:
+      213: 2162489571038434645
+    second: PROTO TILESET_41
+  - first:
+      213: -2731895470232576651
+    second: PROTO TILESET_42
+  - first:
+      213: 2823239641311570132
+    second: PROTO TILESET_43
+  - first:
+      213: -7871085077073768246
+    second: PROTO TILESET_44
+  - first:
+      213: 2557322028788062705
+    second: PROTO TILESET_45
+  - first:
+      213: -5148737457092877593
+    second: PROTO TILESET_46
+  - first:
+      213: -1526877455707772501
+    second: PROTO TILESET_47
+  - first:
+      213: -3053602052972929233
+    second: PROTO TILESET_48
+  - first:
+      213: -289560280433806507
+    second: PROTO TILESET_49
+  - first:
+      213: -3931399066780210334
+    second: PROTO TILESET_50
+  - first:
+      213: -1289093325044395404
+    second: PROTO TILESET_51
+  - first:
+      213: -1244488753906169927
+    second: PROTO TILESET_52
+  - first:
+      213: 4823056856518883482
+    second: PROTO TILESET_53
+  - first:
+      213: 6449931658725993849
+    second: PROTO TILESET_54
+  - first:
+      213: 4913579350660318044
+    second: PROTO TILESET_55
+  - first:
+      213: -8417330524979298926
+    second: PROTO TILESET_56
+  - first:
+      213: 7721181123236328723
+    second: PROTO TILESET_57
+  - first:
+      213: -8189227984777003941
+    second: PROTO TILESET_58
+  - first:
+      213: 8555233076924394390
+    second: PROTO TILESET_59
+  - first:
+      213: 2606336160721317682
+    second: PROTO TILESET_60
+  - first:
+      213: -8383844506590438423
+    second: PROTO TILESET_61
+  - first:
+      213: -1729176199688199923
+    second: PROTO TILESET_62
+  - first:
+      213: -4988819132914889835
+    second: PROTO TILESET_63
+  - first:
+      213: -9204833720455295055
+    second: PROTO TILESET_64
+  - first:
+      213: -9116392782797306074
+    second: PROTO TILESET_65
+  - first:
+      213: 5889886076162399948
+    second: PROTO TILESET_66
+  - first:
+      213: -3741252787294155942
+    second: PROTO TILESET_67
+  - first:
+      213: -3378129756963687100
+    second: PROTO TILESET_68
+  - first:
+      213: 3659332270598147464
+    second: PROTO TILESET_69
+  - first:
+      213: -248079599680514209
+    second: PROTO TILESET_70
+  - first:
+      213: -1315474715919728683
+    second: PROTO TILESET_71
+  - first:
+      213: -2465123079261862056
+    second: PROTO TILESET_72
+  - first:
+      213: 5974398491355277415
+    second: PROTO TILESET_73
+  - first:
+      213: 6899547039803950501
+    second: PROTO TILESET_74
+  - first:
+      213: -8392846705428635357
+    second: PROTO TILESET_75
+  - first:
+      213: 8317884878632530945
+    second: PROTO TILESET_76
+  - first:
+      213: -8981597960406905877
+    second: PROTO TILESET_77
+  - first:
+      213: -6261528890084857782
+    second: PROTO TILESET_78
+  - first:
+      213: 2839833248826485004
+    second: PROTO TILESET_79
+  - first:
+      213: -9006858178607181897
+    second: PROTO TILESET_80
+  - first:
+      213: 5678407185210847241
+    second: PROTO TILESET_81
+  - first:
+      213: -4919903338741944231
+    second: PROTO TILESET_82
+  - first:
+      213: 7637435032488701835
+    second: PROTO TILESET_83
+  - first:
+      213: -198095834335091569
+    second: PROTO TILESET_84
+  - first:
+      213: -2232675685935165269
+    second: PROTO TILESET_85
+  - first:
+      213: 8412129358304846533
+    second: PROTO TILESET_86
+  - first:
+      213: 1887365059900360759
+    second: PROTO TILESET_87
+  - first:
+      213: 6848849351870733196
+    second: PROTO TILESET_88
+  - first:
+      213: 3612944797855400907
+    second: PROTO TILESET_89
+  - first:
+      213: 5181359005948437475
+    second: PROTO TILESET_90
+  - first:
+      213: -2487952464532932122
+    second: PROTO TILESET_91
+  - first:
+      213: 408377876532097000
+    second: PROTO TILESET_92
+  - first:
+      213: 9120758685641981860
+    second: PROTO TILESET_93
+  - first:
+      213: 8461833037783336201
+    second: PROTO TILESET_94
+  - first:
+      213: 6448341273052112535
+    second: PROTO TILESET_95
+  - first:
+      213: -2871804081989400599
+    second: PROTO TILESET_96
+  - first:
+      213: 8845557195775334643
+    second: PROTO TILESET_97
+  - first:
+      213: 8250325196050022275
+    second: PROTO TILESET_98
+  - first:
+      213: 7167850254646424151
+    second: PROTO TILESET_99
+  - first:
+      213: -4305538449102847320
+    second: PROTO TILESET_100
+  - first:
+      213: 5851801279645244747
+    second: PROTO TILESET_101
+  - first:
+      213: -3467648028871223192
+    second: PROTO TILESET_102
+  - first:
+      213: -3235131583603945720
+    second: PROTO TILESET_103
+  - first:
+      213: 8863346993493297664
+    second: PROTO TILESET_104
+  - first:
+      213: 6219967147147764439
+    second: PROTO TILESET_105
+  - first:
+      213: -6216127623459222997
+    second: PROTO TILESET_106
+  - first:
+      213: 6451870518813958990
+    second: PROTO TILESET_107
+  - first:
+      213: 91907677114972784
+    second: PROTO TILESET_108
+  - first:
+      213: -9066864090405811999
+    second: PROTO TILESET_109
+  - first:
+      213: 5381317554408411330
+    second: PROTO TILESET_110
+  - first:
+      213: 934437150816339345
+    second: PROTO TILESET_111
+  - first:
+      213: 3820655003297901444
+    second: PROTO TILESET_112
+  - first:
+      213: 9035410346805482895
+    second: PROTO TILESET_113
+  - first:
+      213: 3750387137851632271
+    second: PROTO TILESET_114
+  - first:
+      213: -6104076552544141883
+    second: PROTO TILESET_115
+  - first:
+      213: -6023340605480955535
+    second: PROTO TILESET_116
+  - first:
+      213: 5635840418425382199
+    second: PROTO TILESET_117
+  - first:
+      213: 6694608008293533284
+    second: PROTO TILESET_118
+  - first:
+      213: 8933286418557439653
+    second: PROTO TILESET_119
+  - first:
+      213: 8062201241333983778
+    second: PROTO TILESET_120
+  - first:
+      213: 4509327827938379732
+    second: PROTO TILESET_121
+  - first:
+      213: -7100511027404688846
+    second: PROTO TILESET_122
+  - first:
+      213: 777060635246406510
+    second: PROTO TILESET_123
+  - first:
+      213: -5334962949189415029
+    second: PROTO TILESET_124
+  - first:
+      213: 3501002816387874278
+    second: PROTO TILESET_125
+  - first:
+      213: -2319766543306779488
+    second: PROTO TILESET_126
+  - first:
+      213: -1104457257786687384
+    second: PROTO TILESET_127
+  - first:
+      213: -5749475212128168235
+    second: PROTO TILESET_128
+  - first:
+      213: 775993464326109870
+    second: PROTO TILESET_129
+  - first:
+      213: -8153875493537314377
+    second: PROTO TILESET_130
+  - first:
+      213: 8028819360961877794
+    second: PROTO TILESET_131
+  - first:
+      213: -8187631185172081940
+    second: PROTO TILESET_132
+  - first:
+      213: -2560332855210223802
+    second: PROTO TILESET_133
+  - first:
+      213: 8828388788406518865
+    second: PROTO TILESET_134
+  - first:
+      213: 689681554289907956
+    second: PROTO TILESET_135
+  - first:
+      213: -4774982401088418957
+    second: PROTO TILESET_136
+  - first:
+      213: 7582461296092022696
+    second: PROTO TILESET_137
+  - first:
+      213: 2042539611878575945
+    second: PROTO TILESET_138
+  - first:
+      213: 7676286203869692086
+    second: PROTO TILESET_139
+  - first:
+      213: 1556395482293018309
+    second: PROTO TILESET_140
+  - first:
+      213: -91375588924060966
+    second: PROTO TILESET_141
+  - first:
+      213: 4411406440398192614
+    second: PROTO TILESET_142
+  - first:
+      213: 703842605557756772
+    second: PROTO TILESET_143
+  - first:
+      213: 240459497934162190
+    second: PROTO TILESET_144
+  - first:
+      213: 7576053862663907039
+    second: PROTO TILESET_145
+  - first:
+      213: -6754030583325916900
+    second: PROTO TILESET_146
+  - first:
+      213: 8178512259814637883
+    second: PROTO TILESET_147
+  - first:
+      213: -2714945163223312888
+    second: PROTO TILESET_148
+  - first:
+      213: -9063080716845262514
+    second: PROTO TILESET_149
+  - first:
+      213: -1069661172899252339
+    second: PROTO TILESET_150
+  - first:
+      213: -720292055463373780
+    second: PROTO TILESET_151
+  - first:
+      213: 3665971566304576475
+    second: PROTO TILESET_152
+  - first:
+      213: 5806868963688901000
+    second: PROTO TILESET_153
+  - first:
+      213: 6875621059708119068
+    second: PROTO TILESET_154
+  - first:
+      213: -8157679041457193763
+    second: PROTO TILESET_155
+  - first:
+      213: 796179596861267051
+    second: PROTO TILESET_156
+  - first:
+      213: 8675250281445819953
+    second: PROTO TILESET_157
+  - first:
+      213: -5775595707211897153
+    second: PROTO TILESET_158
+  - first:
+      213: -6202778124331549644
+    second: PROTO TILESET_159
+  - first:
+      213: 5772524065334203708
+    second: PROTO TILESET_160
+  - first:
+      213: -6093272044248519942
+    second: PROTO TILESET_161
+  - first:
+      213: -9186996090466006888
+    second: PROTO TILESET_162
+  - first:
+      213: -305876540274888605
+    second: PROTO TILESET_163
+  - first:
+      213: -1938388367237278065
+    second: PROTO TILESET_164
+  - first:
+      213: 1689543284689217378
+    second: PROTO TILESET_165
+  - first:
+      213: 4622845395885664657
+    second: PROTO TILESET_166
+  - first:
+      213: -3135130445093513468
+    second: PROTO TILESET_167
+  - first:
+      213: -8668492419750400670
+    second: PROTO TILESET_168
+  - first:
+      213: -8914230612855665656
+    second: PROTO TILESET_169
+  - first:
+      213: -2512459619662869387
+    second: PROTO TILESET_170
+  - first:
+      213: -7916764174919069000
+    second: PROTO TILESET_171
+  - first:
+      213: 6616407692157480068
+    second: PROTO TILESET_172
+  - first:
+      213: -5272688524991758622
+    second: PROTO TILESET_173
+  - first:
+      213: 6806424578514831169
+    second: PROTO TILESET_174
+  - first:
+      213: -3861302466012071020
+    second: PROTO TILESET_175
+  - first:
+      213: -2322451406347694227
+    second: PROTO TILESET_176
+  - first:
+      213: -5917787666527311051
+    second: PROTO TILESET_177
+  - first:
+      213: -4754364312216576983
+    second: PROTO TILESET_178
+  - first:
+      213: 8667830179591901726
+    second: PROTO TILESET_179
+  - first:
+      213: 7709903224824550233
+    second: PROTO TILESET_180
+  - first:
+      213: -6533904025040573392
+    second: PROTO TILESET_181
+  - first:
+      213: -8440936800333629505
+    second: PROTO TILESET_182
+  - first:
+      213: 1369454162796228088
+    second: PROTO TILESET_183
+  - first:
+      213: 8795485344442737418
+    second: PROTO TILESET_184
+  - first:
+      213: -4037697395754905260
+    second: PROTO TILESET_185
+  - first:
+      213: -7879674173271823207
+    second: PROTO TILESET_186
+  - first:
+      213: -5964691973696345188
+    second: PROTO TILESET_187
+  - first:
+      213: -4680815279981112443
+    second: PROTO TILESET_188
+  - first:
+      213: -4398038253173064716
+    second: PROTO TILESET_189
+  - first:
+      213: -2959090435005849123
+    second: PROTO TILESET_190
+  - first:
+      213: 5928907515159962345
+    second: PROTO TILESET_191
+  - first:
+      213: -5066378721031740033
+    second: PROTO TILESET_192
+  - first:
+      213: 8894367383993187064
+    second: PROTO TILESET_193
+  - first:
+      213: -6193004809311436721
+    second: PROTO TILESET_194
+  - first:
+      213: 6549468921472576139
+    second: PROTO TILESET_195
+  - first:
+      213: -1907149755945317243
+    second: PROTO TILESET_196
+  - first:
+      213: -7994657412875447714
+    second: PROTO TILESET_197
+  - first:
+      213: 1406516309509827386
+    second: PROTO TILESET_198
+  - first:
+      213: 7032267869338488721
+    second: PROTO TILESET_199
+  - first:
+      213: -8521308699400170519
+    second: PROTO TILESET_200
+  - first:
+      213: 4296083878924705399
+    second: PROTO TILESET_201
+  - first:
+      213: -5872403916959600089
+    second: PROTO TILESET_202
+  - first:
+      213: -3381628226992913993
+    second: PROTO TILESET_203
+  - first:
+      213: 6837312190652230369
+    second: PROTO TILESET_204
+  - first:
+      213: -2907104804342524146
+    second: PROTO TILESET_205
+  - first:
+      213: -6109669159339592621
+    second: PROTO TILESET_206
+  - first:
+      213: 7982478245906832335
+    second: PROTO TILESET_207
+  - first:
+      213: 4788337416417389092
+    second: PROTO TILESET_208
+  - first:
+      213: 745511341712047315
+    second: PROTO TILESET_209
+  - first:
+      213: 9145154852963019529
+    second: PROTO TILESET_210
+  - first:
+      213: 757989526430627791
+    second: PROTO TILESET_211
+  - first:
+      213: 5178834890017933194
+    second: PROTO TILESET_212
+  - first:
+      213: 2389198167768539216
+    second: PROTO TILESET_213
+  - first:
+      213: -3613646616833228451
+    second: PROTO TILESET_214
+  - first:
+      213: 5808326391811535913
+    second: PROTO TILESET_215
+  - first:
+      213: -5223829978704418922
+    second: PROTO TILESET_216
+  - first:
+      213: 7815521136975799168
+    second: PROTO TILESET_217
+  - first:
+      213: -5312660315495117721
+    second: PROTO TILESET_218
+  - first:
+      213: 4410092255203323031
+    second: PROTO TILESET_219
+  - first:
+      213: -8244707302919698474
+    second: PROTO TILESET_220
+  - first:
+      213: -3223334829072432604
+    second: PROTO TILESET_221
+  - first:
+      213: 6283812122922398889
+    second: PROTO TILESET_222
+  - first:
+      213: -8409420355466373131
+    second: PROTO TILESET_223
+  - first:
+      213: -190124389821421777
+    second: PROTO TILESET_224
+  - first:
+      213: -353696327472812690
+    second: PROTO TILESET_225
+  - first:
+      213: 9016205016078116174
+    second: PROTO TILESET_226
+  - first:
+      213: 6095957332506389669
+    second: PROTO TILESET_227
+  - first:
+      213: -3228265083110962084
+    second: PROTO TILESET_228
+  - first:
+      213: -8888592130971429416
+    second: PROTO TILESET_229
+  - first:
+      213: 8870499449095777844
+    second: PROTO TILESET_230
+  - first:
+      213: 1178591779313865084
+    second: PROTO TILESET_231
+  - first:
+      213: 355013270708304854
+    second: PROTO TILESET_232
+  - first:
+      213: 799849303011243446
+    second: PROTO TILESET_233
+  - first:
+      213: 3792265332397949228
+    second: PROTO TILESET_234
+  - first:
+      213: -3918826883770722345
+    second: PROTO TILESET_235
+  - first:
+      213: 3877648939219618798
+    second: PROTO TILESET_236
+  - first:
+      213: -6822871931729030379
+    second: PROTO TILESET_237
+  - first:
+      213: 8276552455054232432
+    second: PROTO TILESET_238
+  - first:
+      213: 3791785644350570353
+    second: PROTO TILESET_239
+  - first:
+      213: -278450688503910126
+    second: PROTO TILESET_240
+  - first:
+      213: -1101244594084893376
+    second: PROTO TILESET_241
+  - first:
+      213: 3092792968873742224
+    second: PROTO TILESET_242
+  - first:
+      213: 3120802088924008616
+    second: PROTO TILESET_243
+  - first:
+      213: -1046540792124121925
+    second: PROTO TILESET_244
+  - first:
+      213: -3985477501959071497
+    second: PROTO TILESET_245
+  - first:
+      213: -252837984661708636
+    second: PROTO TILESET_246
+  - first:
+      213: 666490048251211617
+    second: PROTO TILESET_247
+  - first:
+      213: 1090476933632229906
+    second: PROTO TILESET_248
+  - first:
+      213: 6983574165237440985
+    second: PROTO TILESET_249
+  - first:
+      213: 60822800882724483
+    second: PROTO TILESET_250
+  - first:
+      213: 8783720145282102573
+    second: PROTO TILESET_251
+  - first:
+      213: 360102872823344132
+    second: PROTO TILESET_252
+  - first:
+      213: 160046868934118062
+    second: PROTO TILESET_253
+  - first:
+      213: -4987429541549990476
+    second: PROTO TILESET_254
+  - first:
+      213: -8789938933097025552
+    second: PROTO TILESET_255
+  - first:
+      213: 2285545961798516633
+    second: PROTO TILESET_256
+  - first:
+      213: 8658551326507079305
+    second: PROTO TILESET_257
+  - first:
+      213: -4601369795153713405
+    second: PROTO TILESET_258
+  - first:
+      213: -4185883100233266514
+    second: PROTO TILESET_259
+  - first:
+      213: 5377211384001036901
+    second: PROTO TILESET_260
+  - first:
+      213: -7944089596066951086
+    second: PROTO TILESET_261
+  - first:
+      213: 3163227036126953646
+    second: PROTO TILESET_262
+  - first:
+      213: -8524748742521290651
+    second: PROTO TILESET_263
+  - first:
+      213: -8840973892322707757
+    second: PROTO TILESET_264
+  - first:
+      213: -2828945801077027904
+    second: PROTO TILESET_265
+  - first:
+      213: -4302187631799116146
+    second: PROTO TILESET_266
+  - first:
+      213: -3697778010967814206
+    second: PROTO TILESET_267
+  - first:
+      213: 4003057088118920389
+    second: PROTO TILESET_268
+  - first:
+      213: -707941397800092557
+    second: PROTO TILESET_269
+  - first:
+      213: -3599956967551835013
+    second: PROTO TILESET_270
+  - first:
+      213: -281952206303871172
+    second: PROTO TILESET_271
+  - first:
+      213: 2852775090188932497
+    second: PROTO TILESET_272
+  - first:
+      213: 449108492654432863
+    second: PROTO TILESET_273
+  - first:
+      213: -640402948194907949
+    second: PROTO TILESET_274
+  - first:
+      213: 2176976482894525349
+    second: PROTO TILESET_275
+  - first:
+      213: -6987548147522154740
+    second: PROTO TILESET_276
+  - first:
+      213: -3536539679532855101
+    second: PROTO TILESET_277
+  - first:
+      213: 3658284607021641527
+    second: PROTO TILESET_278
+  - first:
+      213: 1714020377931199034
+    second: PROTO TILESET_279
+  - first:
+      213: 1504984192771237974
+    second: PROTO TILESET_280
+  - first:
+      213: 5361068124732117722
+    second: PROTO TILESET_281
+  - first:
+      213: -8351221766753922726
+    second: PROTO TILESET_282
+  - first:
+      213: 6438328913355929269
+    second: PROTO TILESET_283
+  - first:
+      213: -8796031006206101911
+    second: PROTO TILESET_284
+  - first:
+      213: 4172406041506875783
+    second: PROTO TILESET_285
+  - first:
+      213: -8563355373375901386
+    second: PROTO TILESET_286
+  - first:
+      213: 7682352965742448941
+    second: PROTO TILESET_287
+  - first:
+      213: 7204587788875060121
+    second: PROTO TILESET_288
+  - first:
+      213: 8368833240149838473
+    second: PROTO TILESET_289
+  - first:
+      213: 8579013949103434753
+    second: PROTO TILESET_290
+  - first:
+      213: -3204578070029183701
+    second: PROTO TILESET_291
+  - first:
+      213: -5164064747238467919
+    second: PROTO TILESET_292
+  - first:
+      213: -5881577453584550468
+    second: PROTO TILESET_293
+  - first:
+      213: -5146388330380562802
+    second: PROTO TILESET_294
+  - first:
+      213: 6636884119905867272
+    second: PROTO TILESET_295
+  - first:
+      213: 5226426730083075801
+    second: PROTO TILESET_296
+  - first:
+      213: 4987783322450005880
+    second: PROTO TILESET_297
+  - first:
+      213: 1893649645077589758
+    second: PROTO TILESET_298
+  - first:
+      213: -5231444833687524991
+    second: PROTO TILESET_299
+  - first:
+      213: 4377391673192678997
+    second: PROTO TILESET_300
+  - first:
+      213: -8718961166202251092
+    second: PROTO TILESET_301
+  - first:
+      213: -2908067947401264581
+    second: PROTO TILESET_302
+  - first:
+      213: 9091675904992231798
+    second: PROTO TILESET_303
+  - first:
+      213: 4645725103920328458
+    second: PROTO TILESET_304
+  - first:
+      213: -3310327110742572177
+    second: PROTO TILESET_305
+  - first:
+      213: 2225569496240446577
+    second: PROTO TILESET_306
+  - first:
+      213: 2623947929558443418
+    second: PROTO TILESET_307
+  - first:
+      213: -3067966707090363029
+    second: PROTO TILESET_308
+  - first:
+      213: -2218872806236914441
+    second: PROTO TILESET_309
+  - first:
+      213: 1293404633607013661
+    second: PROTO TILESET_310
+  - first:
+      213: 3923977919028961633
+    second: PROTO TILESET_311
+  - first:
+      213: -5122955828213055774
+    second: PROTO TILESET_312
+  - first:
+      213: 7325966351250751826
+    second: PROTO TILESET_313
+  - first:
+      213: 220490027713305612
+    second: PROTO TILESET_314
+  - first:
+      213: -4117014511841978355
+    second: PROTO TILESET_315
+  - first:
+      213: 7533313478512749636
+    second: PROTO TILESET_316
+  - first:
+      213: 2855561509549512410
+    second: PROTO TILESET_317
+  - first:
+      213: 3616923178372293088
+    second: PROTO TILESET_318
+  - first:
+      213: -7439012609102979473
+    second: PROTO TILESET_319
+  - first:
+      213: -7841987386631953123
+    second: PROTO TILESET_320
+  - first:
+      213: 5946943778840682963
+    second: PROTO TILESET_321
+  - first:
+      213: -3795171203352820266
+    second: PROTO TILESET_322
+  - first:
+      213: 5964196573989971986
+    second: PROTO TILESET_323
+  - first:
+      213: 165938355379131614
+    second: PROTO TILESET_324
+  - first:
+      213: -1353040452793307065
+    second: PROTO TILESET_325
+  - first:
+      213: 1289041297077917226
+    second: PROTO TILESET_326
+  - first:
+      213: -2761727444061181086
+    second: PROTO TILESET_327
+  - first:
+      213: 3219497300909874985
+    second: PROTO TILESET_328
+  - first:
+      213: -3467943580049402248
+    second: PROTO TILESET_329
+  - first:
+      213: 7515054721291136494
+    second: PROTO TILESET_330
+  - first:
+      213: 2425939049963893230
+    second: PROTO TILESET_331
+  - first:
+      213: -1864828665489120460
+    second: PROTO TILESET_332
+  - first:
+      213: -1834914450739479920
+    second: PROTO TILESET_333
+  - first:
+      213: -8551955749513789334
+    second: PROTO TILESET_334
+  - first:
+      213: 939162898429829340
+    second: PROTO TILESET_335
+  - first:
+      213: -9181708747474663638
+    second: PROTO TILESET_336
+  - first:
+      213: -5408874026052627394
+    second: PROTO TILESET_337
+  - first:
+      213: -4221822591770352400
+    second: PROTO TILESET_338
+  - first:
+      213: -3209031246812210997
+    second: PROTO TILESET_339
+  - first:
+      213: -6883810659747384957
+    second: PROTO TILESET_340
+  - first:
+      213: -1347673262055204882
+    second: PROTO TILESET_341
+  - first:
+      213: -137913022326258486
+    second: PROTO TILESET_342
+  - first:
+      213: -7139295983235776993
+    second: PROTO TILESET_343
+  - first:
+      213: -1231637398448706935
+    second: PROTO TILESET_344
+  - first:
+      213: -4842884229710406358
+    second: PROTO TILESET_345
+  - first:
+      213: 7818323243662280238
+    second: PROTO TILESET_346
+  - first:
+      213: -1077542040539091103
+    second: PROTO TILESET_347
+  - first:
+      213: -4108215708024747475
+    second: PROTO TILESET_348
+  - first:
+      213: -5670530950657659656
+    second: PROTO TILESET_349
+  - first:
+      213: -4348150774588466206
+    second: PROTO TILESET_350
+  - first:
+      213: 1568321487935830748
+    second: PROTO TILESET_351
+  - first:
+      213: -7548867787639945813
+    second: PROTO TILESET_352
+  - first:
+      213: -5214949386151511556
+    second: PROTO TILESET_353
+  - first:
+      213: 5862733553735631448
+    second: PROTO TILESET_354
+  - first:
+      213: -932610481465886856
+    second: PROTO TILESET_355
+  - first:
+      213: -7122821127294002065
+    second: PROTO TILESET_356
+  - first:
+      213: 2305228132972766022
+    second: PROTO TILESET_357
+  - first:
+      213: -7058240091917986062
+    second: PROTO TILESET_358
+  - first:
+      213: -2245862053906956355
+    second: PROTO TILESET_359
+  - first:
+      213: -1544744635954269954
+    second: PROTO TILESET_360
+  - first:
+      213: -3251443883973861302
+    second: PROTO TILESET_361
+  - first:
+      213: 8449696225510897965
+    second: PROTO TILESET_362
+  - first:
+      213: -7427828688752728271
+    second: PROTO TILESET_363
+  - first:
+      213: -1088941816496181557
+    second: PROTO TILESET_364
+  - first:
+      213: -2597961161132619207
+    second: PROTO TILESET_365
+  - first:
+      213: 5595560750636253970
+    second: PROTO TILESET_366
+  - first:
+      213: 1666101382993609694
+    second: PROTO TILESET_367
+  - first:
+      213: 1421890493529407507
+    second: PROTO TILESET_368
+  - first:
+      213: 340886183285738184
+    second: PROTO TILESET_369
+  - first:
+      213: 1289438769163720883
+    second: PROTO TILESET_370
+  - first:
+      213: 283479365547215919
+    second: PROTO TILESET_371
+  - first:
+      213: 1422622854739243072
+    second: PROTO TILESET_372
+  - first:
+      213: -5337845943545063025
+    second: PROTO TILESET_373
+  - first:
+      213: -8147751773213207700
+    second: PROTO TILESET_374
+  - first:
+      213: 541398099878407241
+    second: PROTO TILESET_375
+  - first:
+      213: -1818309059437808302
+    second: PROTO TILESET_376
+  - first:
+      213: -1710932595987921127
+    second: PROTO TILESET_377
+  - first:
+      213: 2555095225985965661
+    second: PROTO TILESET_378
+  - first:
+      213: 5643773363029775383
+    second: PROTO TILESET_379
+  - first:
+      213: -120495980698560863
+    second: PROTO TILESET_380
+  - first:
+      213: 6293379626092115145
+    second: PROTO TILESET_381
+  - first:
+      213: 5557447105455050915
+    second: PROTO TILESET_382
+  - first:
+      213: -7785106988417697683
+    second: PROTO TILESET_383
+  - first:
+      213: 5887010797544749220
+    second: PROTO TILESET_384
+  - first:
+      213: 5081803961043168218
+    second: PROTO TILESET_385
+  - first:
+      213: 47807767131003535
+    second: PROTO TILESET_386
+  - first:
+      213: 5788028520163186143
+    second: PROTO TILESET_387
+  - first:
+      213: -6410596018614487978
+    second: PROTO TILESET_388
+  - first:
+      213: 4520008607266245574
+    second: PROTO TILESET_389
+  - first:
+      213: -1637400016194552221
+    second: PROTO TILESET_390
+  - first:
+      213: 2230289482043997423
+    second: PROTO TILESET_391
+  - first:
+      213: -3588151865233561777
+    second: PROTO TILESET_392
+  - first:
+      213: -3451945127477925214
+    second: PROTO TILESET_393
+  - first:
+      213: 7085742178987167476
+    second: PROTO TILESET_394
+  - first:
+      213: 710352320721816160
+    second: PROTO TILESET_395
+  - first:
+      213: 2730113072345787037
+    second: PROTO TILESET_396
+  - first:
+      213: -2383821181609965582
+    second: PROTO TILESET_397
+  - first:
+      213: 6589342238131912902
+    second: PROTO TILESET_398
+  - first:
+      213: 1191604060325105185
+    second: PROTO TILESET_399
+  - first:
+      213: -1377262896591505656
+    second: PROTO TILESET_400
+  - first:
+      213: 9062981956126584364
+    second: PROTO TILESET_401
+  - first:
+      213: 305897915873598391
+    second: PROTO TILESET_402
+  - first:
+      213: 7020949526857433861
+    second: PROTO TILESET_403
+  - first:
+      213: -5177577902597483087
+    second: PROTO TILESET_404
+  - first:
+      213: -6845699170757635325
+    second: PROTO TILESET_405
+  - first:
+      213: -2138995472469147712
+    second: PROTO TILESET_406
+  - first:
+      213: 6512036490978443328
+    second: PROTO TILESET_407
+  - first:
+      213: -7191814501476512470
+    second: PROTO TILESET_408
+  - first:
+      213: 1011658293528515803
+    second: PROTO TILESET_409
+  - first:
+      213: -99943386333798432
+    second: PROTO TILESET_410
+  - first:
+      213: 9112384794147532567
+    second: PROTO TILESET_411
+  - first:
+      213: -6391183297889414369
+    second: PROTO TILESET_412
+  - first:
+      213: 8623406102194573735
+    second: PROTO TILESET_413
+  - first:
+      213: 6731781318853310830
+    second: PROTO TILESET_414
+  - first:
+      213: -3525262170703388592
+    second: PROTO TILESET_415
+  - first:
+      213: -4406138468227224410
+    second: PROTO TILESET_416
+  - first:
+      213: -2007011273124691970
+    second: PROTO TILESET_417
+  - first:
+      213: -1314015323838684328
+    second: PROTO TILESET_418
+  - first:
+      213: -2681811020371659584
+    second: PROTO TILESET_419
+  - first:
+      213: 2103329518834905258
+    second: PROTO TILESET_420
+  - first:
+      213: 5905574184223513819
+    second: PROTO TILESET_421
+  - first:
+      213: -3197211704670851868
+    second: PROTO TILESET_422
+  - first:
+      213: 7316338162393903559
+    second: PROTO TILESET_423
+  - first:
+      213: 7076824001601256183
+    second: PROTO TILESET_424
+  - first:
+      213: 8095211224973663456
+    second: PROTO TILESET_425
+  - first:
+      213: 2140161603045655765
+    second: PROTO TILESET_426
+  - first:
+      213: 5325833754193092305
+    second: PROTO TILESET_427
+  - first:
+      213: -7134553595563636536
+    second: PROTO TILESET_428
+  - first:
+      213: 5704681017976874931
+    second: PROTO TILESET_429
+  - first:
+      213: -8248091461091872831
+    second: PROTO TILESET_430
+  - first:
+      213: -2347986515913597011
+    second: PROTO TILESET_431
+  - first:
+      213: -3591530929033880396
+    second: PROTO TILESET_432
+  - first:
+      213: -2011738356446098858
+    second: PROTO TILESET_433
+  - first:
+      213: -3618546620926243278
+    second: PROTO TILESET_434
+  - first:
+      213: 2231782402072957252
+    second: PROTO TILESET_435
+  - first:
+      213: 596184736928713587
+    second: PROTO TILESET_436
+  - first:
+      213: -2721999839314543348
+    second: PROTO TILESET_437
+  - first:
+      213: 7584981266372490422
+    second: PROTO TILESET_438
+  - first:
+      213: -3696639211838042749
+    second: PROTO TILESET_439
+  - first:
+      213: 1144836398226266838
+    second: PROTO TILESET_440
+  - first:
+      213: 2323412376336792475
+    second: PROTO TILESET_441
+  - first:
+      213: -1412809882761017812
+    second: PROTO TILESET_442
+  - first:
+      213: 8920333583556106113
+    second: PROTO TILESET_443
+  - first:
+      213: 7033817279536464269
+    second: PROTO TILESET_444
+  - first:
+      213: 8046672942278511965
+    second: PROTO TILESET_445
+  - first:
+      213: 6777796761087821977
+    second: PROTO TILESET_446
+  - first:
+      213: -6474133001316572533
+    second: PROTO TILESET_447
+  - first:
+      213: 6733480401699261458
+    second: PROTO TILESET_448
+  - first:
+      213: 6411474397735533499
+    second: PROTO TILESET_449
+  - first:
+      213: 4714561413801217393
+    second: PROTO TILESET_450
+  - first:
+      213: -4532284805143249682
+    second: PROTO TILESET_451
+  - first:
+      213: 7475511501183691817
+    second: PROTO TILESET_452
+  - first:
+      213: -6813709218978207642
+    second: PROTO TILESET_453
+  - first:
+      213: -1994064415908117391
+    second: PROTO TILESET_454
+  - first:
+      213: -6281249377528241760
+    second: PROTO TILESET_455
+  - first:
+      213: -1492524473974284714
+    second: PROTO TILESET_456
+  - first:
+      213: 6618548718942751357
+    second: PROTO TILESET_457
+  - first:
+      213: -7697958493596735085
+    second: PROTO TILESET_458
+  - first:
+      213: -5766916177813723057
+    second: PROTO TILESET_459
+  - first:
+      213: -143294389257038467
+    second: PROTO TILESET_460
+  - first:
+      213: 3709556760282644375
+    second: PROTO TILESET_461
+  - first:
+      213: -3973032278004009744
+    second: PROTO TILESET_462
+  - first:
+      213: 1009339350809785933
+    second: PROTO TILESET_463
+  - first:
+      213: -6163883568089442279
+    second: PROTO TILESET_464
+  - first:
+      213: -8501971217553590946
+    second: PROTO TILESET_465
+  - first:
+      213: 1292650358363617141
+    second: PROTO TILESET_466
+  - first:
+      213: -5316805184972250679
+    second: PROTO TILESET_467
+  - first:
+      213: 2706524149205719754
+    second: PROTO TILESET_468
+  - first:
+      213: -2813697750031942422
+    second: PROTO TILESET_469
+  - first:
+      213: 8822802344825346144
+    second: PROTO TILESET_470
+  - first:
+      213: 8797519554408179722
+    second: PROTO TILESET_471
+  - first:
+      213: 7299729519311366213
+    second: PROTO TILESET_472
+  - first:
+      213: -5418338678631811927
+    second: PROTO TILESET_473
+  - first:
+      213: 2095098453910172520
+    second: PROTO TILESET_474
+  - first:
+      213: 4688004981094347069
+    second: PROTO TILESET_475
+  - first:
+      213: -9032206966413537940
+    second: PROTO TILESET_476
+  - first:
+      213: 4016672178182343230
+    second: PROTO TILESET_477
+  - first:
+      213: -3658148566202474545
+    second: PROTO TILESET_478
+  - first:
+      213: -7811002426271446190
+    second: PROTO TILESET_479
+  - first:
+      213: -3390940904302653397
+    second: PROTO TILESET_480
+  - first:
+      213: -4514483928913693632
+    second: PROTO TILESET_481
+  - first:
+      213: 8040525178958240438
+    second: PROTO TILESET_482
+  - first:
+      213: -7631785510618655996
+    second: PROTO TILESET_483
+  - first:
+      213: 7102888168531731670
+    second: PROTO TILESET_484
+  - first:
+      213: -5417765279677597917
+    second: PROTO TILESET_485
+  - first:
+      213: -2469397194240002267
+    second: PROTO TILESET_486
+  - first:
+      213: -7280827285051174545
+    second: PROTO TILESET_487
+  - first:
+      213: -6180221096933716153
+    second: PROTO TILESET_488
+  - first:
+      213: -3528401955286834223
+    second: PROTO TILESET_489
+  - first:
+      213: 8773905304578647435
+    second: PROTO TILESET_490
+  - first:
+      213: 6078178345755452820
+    second: PROTO TILESET_491
+  - first:
+      213: -7269442096625575973
+    second: PROTO TILESET_492
+  - first:
+      213: -2573934270737318866
+    second: PROTO TILESET_493
+  - first:
+      213: -2912371093984866798
+    second: PROTO TILESET_494
+  - first:
+      213: 8154892526675425731
+    second: PROTO TILESET_495
+  - first:
+      213: 1667512029531323001
+    second: PROTO TILESET_496
+  - first:
+      213: -4370721054353147701
+    second: PROTO TILESET_497
+  - first:
+      213: -1268906177133268626
+    second: PROTO TILESET_498
+  - first:
+      213: -7191315286817079933
+    second: PROTO TILESET_499
+  - first:
+      213: -2323697185628702713
+    second: PROTO TILESET_500
+  - first:
+      213: 1421871461381107118
+    second: PROTO TILESET_501
+  - first:
+      213: 6576904804853012460
+    second: PROTO TILESET_502
+  - first:
+      213: -2571707252124737486
+    second: PROTO TILESET_503
+  - first:
+      213: -8728676550985075149
+    second: PROTO TILESET_504
+  - first:
+      213: 9166411953525903060
+    second: PROTO TILESET_505
+  - first:
+      213: 7618200111794710503
+    second: PROTO TILESET_506
+  - first:
+      213: -239015538517019621
+    second: PROTO TILESET_507
+  - first:
+      213: -2735430682882373705
+    second: PROTO TILESET_508
+  - first:
+      213: 4547225987823723227
+    second: PROTO TILESET_509
+  - first:
+      213: -4036022309905975855
+    second: PROTO TILESET_510
+  - first:
+      213: 671309125004993078
+    second: PROTO TILESET_511
+  - first:
+      213: -2205612396228428079
+    second: PROTO TILESET_512
+  - first:
+      213: -7278057348101879285
+    second: PROTO TILESET_513
+  - first:
+      213: -5603771706638875292
+    second: PROTO TILESET_514
+  - first:
+      213: 5604722167840640366
+    second: PROTO TILESET_515
+  - first:
+      213: 6175241654225444196
+    second: PROTO TILESET_516
+  - first:
+      213: -7950478458498970824
+    second: PROTO TILESET_517
+  - first:
+      213: 4503279861418519047
+    second: PROTO TILESET_518
+  - first:
+      213: -3478835227369560788
+    second: PROTO TILESET_519
+  - first:
+      213: -8318475729849851088
+    second: PROTO TILESET_520
+  - first:
+      213: -2208279653111345333
+    second: PROTO TILESET_521
+  - first:
+      213: -3691752986195012711
+    second: PROTO TILESET_522
+  - first:
+      213: -64994582816485958
+    second: PROTO TILESET_523
+  - first:
+      213: -2372255039578577146
+    second: PROTO TILESET_524
+  - first:
+      213: -6658672129762936790
+    second: PROTO TILESET_525
+  - first:
+      213: 3031756599012888579
+    second: PROTO TILESET_526
+  - first:
+      213: -756544861137264475
+    second: PROTO TILESET_527
+  - first:
+      213: 6069640362335358418
+    second: PROTO TILESET_528
+  - first:
+      213: 8752244988620181105
+    second: PROTO TILESET_529
+  - first:
+      213: 4433159749444231636
+    second: PROTO TILESET_530
+  - first:
+      213: 758137500307289397
+    second: PROTO TILESET_531
+  - first:
+      213: 1651435232166976814
+    second: PROTO TILESET_532
+  - first:
+      213: 6087296579509221424
+    second: PROTO TILESET_533
+  - first:
+      213: -7045622862284734641
+    second: PROTO TILESET_534
+  - first:
+      213: -4139342936715855992
+    second: PROTO TILESET_535
+  - first:
+      213: 7653273118464111472
+    second: PROTO TILESET_536
+  - first:
+      213: -351820832896322440
+    second: PROTO TILESET_537
+  - first:
+      213: -3001203861679754866
+    second: PROTO TILESET_538
+  - first:
+      213: -7564587533335680792
+    second: PROTO TILESET_539
+  - first:
+      213: 5143349953919841214
+    second: PROTO TILESET_540
+  - first:
+      213: 2238550681518832792
+    second: PROTO TILESET_541
+  - first:
+      213: 8991412723403522357
+    second: PROTO TILESET_542
+  - first:
+      213: 1371111621654006536
+    second: PROTO TILESET_543
+  - first:
+      213: 7646217400933212079
+    second: PROTO TILESET_544
+  - first:
+      213: 2924877227507807573
+    second: PROTO TILESET_545
+  - first:
+      213: -245602263509413395
+    second: PROTO TILESET_546
+  - first:
+      213: 4284568113894169395
+    second: PROTO TILESET_547
+  - first:
+      213: -3852875257523371252
+    second: PROTO TILESET_548
+  - first:
+      213: -1538608222121956498
+    second: PROTO TILESET_549
+  - first:
+      213: 3623292395412232435
+    second: PROTO TILESET_550
+  - first:
+      213: 1415391029222189280
+    second: PROTO TILESET_551
+  - first:
+      213: -3722669404568475620
+    second: PROTO TILESET_552
+  - first:
+      213: 31521857436190334
+    second: PROTO TILESET_553
+  - first:
+      213: 2833003287399825071
+    second: PROTO TILESET_554
+  - first:
+      213: -914645376095826204
+    second: PROTO TILESET_555
+  - first:
+      213: 1520708432085408540
+    second: PROTO TILESET_556
+  - first:
+      213: -5227252452690768505
+    second: PROTO TILESET_557
+  - first:
+      213: 7361822857788484888
+    second: PROTO TILESET_558
+  - first:
+      213: 881922365458114085
+    second: PROTO TILESET_559
+  - first:
+      213: -83278564757602720
+    second: PROTO TILESET_560
+  - first:
+      213: -5465458612278721864
+    second: PROTO TILESET_561
+  - first:
+      213: -3203133362938407888
+    second: PROTO TILESET_562
+  - first:
+      213: 3192177247185522989
+    second: PROTO TILESET_563
+  - first:
+      213: 4996168141795955318
+    second: PROTO TILESET_564
+  - first:
+      213: 4519764947594766466
+    second: PROTO TILESET_565
+  - first:
+      213: -2048620415196371423
+    second: PROTO TILESET_566
+  - first:
+      213: -2865300910546971802
+    second: PROTO TILESET_567
+  - first:
+      213: -4893453014113869171
+    second: PROTO TILESET_568
+  - first:
+      213: -7821673978877427719
+    second: PROTO TILESET_569
+  - first:
+      213: -1110987992778190901
+    second: PROTO TILESET_570
+  - first:
+      213: -7130681861069238521
+    second: PROTO TILESET_571
+  - first:
+      213: -9168829742566518579
+    second: PROTO TILESET_572
+  - first:
+      213: -5180834557491729673
+    second: PROTO TILESET_573
+  - first:
+      213: -601269222935136430
+    second: PROTO TILESET_574
+  - first:
+      213: 6554681976832682834
+    second: PROTO TILESET_575
+  - first:
+      213: -8944283396049522721
+    second: PROTO TILESET_576
+  - first:
+      213: 2253440023264699902
+    second: PROTO TILESET_577
+  - first:
+      213: 6774484254356229774
+    second: PROTO TILESET_578
+  - first:
+      213: -6615967378237830640
+    second: PROTO TILESET_579
+  - first:
+      213: -1957412470107425427
+    second: PROTO TILESET_580
+  - first:
+      213: 9163326651028916130
+    second: PROTO TILESET_581
+  - first:
+      213: -3298828853582293135
+    second: PROTO TILESET_582
+  - first:
+      213: -8166249917541822465
+    second: PROTO TILESET_583
+  - first:
+      213: 8599657266003887673
+    second: PROTO TILESET_584
+  - first:
+      213: 4729187688718506061
+    second: PROTO TILESET_585
+  - first:
+      213: -7734127350559431080
+    second: PROTO TILESET_586
+  - first:
+      213: -5203035572500836235
+    second: PROTO TILESET_587
+  - first:
+      213: -8401134229469412860
+    second: PROTO TILESET_588
+  - first:
+      213: -7413420625110443038
+    second: PROTO TILESET_589
+  - first:
+      213: -2134460905642208701
+    second: PROTO TILESET_590
+  - first:
+      213: -6821182099696083251
+    second: PROTO TILESET_591
+  - first:
+      213: 5282620084052621383
+    second: PROTO TILESET_592
+  - first:
+      213: 3026353115700729433
+    second: PROTO TILESET_593
+  - first:
+      213: -6889915901177824783
+    second: PROTO TILESET_594
+  - first:
+      213: 6017303320258676867
+    second: PROTO TILESET_595
+  - first:
+      213: 5288481931518402739
+    second: PROTO TILESET_596
+  - first:
+      213: 3259656823078203013
+    second: PROTO TILESET_597
+  - first:
+      213: -4883093712772552165
+    second: PROTO TILESET_598
+  - first:
+      213: -4389178416962007836
+    second: PROTO TILESET_599
+  - first:
+      213: -621494552490502517
+    second: PROTO TILESET_600
+  - first:
+      213: 3548263676888826922
+    second: PROTO TILESET_601
+  - first:
+      213: -5283255956452833018
+    second: PROTO TILESET_602
+  - first:
+      213: 7621135610995931344
+    second: PROTO TILESET_603
+  - first:
+      213: -4359007166114432085
+    second: PROTO TILESET_604
+  - first:
+      213: 2322506217053615228
+    second: PROTO TILESET_605
+  - first:
+      213: -3414569588931229289
+    second: PROTO TILESET_606
+  - first:
+      213: -3019657311115330962
+    second: PROTO TILESET_607
+  - first:
+      213: -680315840875763081
+    second: PROTO TILESET_608
+  - first:
+      213: -181866077356482118
+    second: PROTO TILESET_609
+  - first:
+      213: 3681890427347673835
+    second: PROTO TILESET_610
+  - first:
+      213: 2169871102079712265
+    second: PROTO TILESET_611
+  - first:
+      213: -7609893363745539738
+    second: PROTO TILESET_612
+  - first:
+      213: 9066011888252365899
+    second: PROTO TILESET_613
+  - first:
+      213: 7962919937242199750
+    second: PROTO TILESET_614
+  - first:
+      213: 8364374791629694828
+    second: PROTO TILESET_615
+  - first:
+      213: -1559979541935984447
+    second: PROTO TILESET_616
+  - first:
+      213: -1498057917153423372
+    second: PROTO TILESET_617
+  - first:
+      213: -1456984593869851081
+    second: PROTO TILESET_618
+  - first:
+      213: 8659337268511707121
+    second: PROTO TILESET_619
+  - first:
+      213: 8206794545226520563
+    second: PROTO TILESET_620
+  - first:
+      213: -8737013624212341104
+    second: PROTO TILESET_621
+  - first:
+      213: -1366661893813381473
+    second: PROTO TILESET_622
+  - first:
+      213: -364526555357878872
+    second: PROTO TILESET_623
+  - first:
+      213: -8869723074649698885
+    second: PROTO TILESET_624
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PROTO TILESET_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1395
+        width: 765
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17c6e035d1fd34f0800000000000000
+      internalID: -847255256925026531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PROTO TILESET_1
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1397
+        width: 765
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af76a2fb069de3680800000000000000
+      internalID: -8773336014523832326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PROTO TILESET_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 591
+        width: 759
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc38aeada8786d860800000000000000
+      internalID: 7554374455408624587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PROTO TILESET_3
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 591
+        width: 765
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5604df570878260800000000000000
+      internalID: 7099784581821261311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

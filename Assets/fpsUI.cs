@@ -19,5 +19,6 @@ public class fpsUI : MonoBehaviour
     {
         
         fps.text = ((int)(1.0f / Time.smoothDeltaTime)).ToString() + " fps";   //nb de frames ecouler en 1 secondes
+       // fps.text = Time.time.ToString() + " ";   //nb de frames ecouler en 1 secondes
     }
 }
