@@ -1123,7 +1123,7 @@ AnimatorStateMachine:
     m_Position: {x: -190, y: 1310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5239718960486095638}
-    m_Position: {x: 670, y: -560, z: 0}
+    m_Position: {x: -140, y: -310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5774667791446687510}
     m_Position: {x: 1590, y: -560, z: 0}
@@ -1281,6 +1281,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: splashMur
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: grounded
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2885216202406501731}
   m_Solo: 0
@@ -1333,6 +1336,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: reverseVectorInput
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: grounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2238834697124865621}
@@ -1942,6 +1948,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: movementInput
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: grounded
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5719918146407571569}
   m_Solo: 0
@@ -2128,12 +2137,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: grounded
-    m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: superJump
+    m_ConditionEvent: inputJump
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: speed
+    m_EventTreshold: 8.8
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -879381684729829184}
   m_Solo: 0
@@ -2591,6 +2600,9 @@ AnimatorStateTransition:
     m_ConditionEvent: speed
     m_EventTreshold: 0.1
   - m_ConditionMode: 1
+    m_ConditionEvent: grounded
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
     m_ConditionEvent: movementInput
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -2694,11 +2706,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: grounded
-    m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: classicJump
+    m_ConditionEvent: inputJump
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5239718960486095638}

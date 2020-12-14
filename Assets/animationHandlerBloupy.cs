@@ -135,7 +135,7 @@ public class animationHandlerBloupy : MonoBehaviour
 
     private void NoActionHandler()
     {
-        if (Input.anyKey)       //bLOUPY IS MOVING
+        if (Input.anyKey)       //BLOUPY IS MOVING
         { 
             noActionT = Time.time;
         }

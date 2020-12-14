@@ -63,11 +63,12 @@ public class movementBloupy : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(rb.velocity.magnitude);
         touches = touchHandle.GetTouches();
         if (Input.touchCount > 0)
         {
             lastTouch = touchHandle.GetLastTouch();
-            InputHandler();
+          //  InputHandler();
         }
     }
 
@@ -82,7 +83,7 @@ public class movementBloupy : MonoBehaviour
       //  HandleJumpPC();
     }
 
-
+    
     private void InputHandler()
     {
        /* HANDLE most recent touch---------------------------------------------------------- -*/
@@ -299,12 +300,12 @@ public class movementBloupy : MonoBehaviour
         }
     }
 
-    private float PosTouchRatioX(float posx)
+    public float PosTouchRatioX(float posx)
     {
         return (posx*100/Screen.width);
     }
 
-    private float PosTouchRatioY(float posy)
+    public float PosTouchRatioY(float posy)
     {
         return (posy*100/Screen.height);
     }
@@ -346,20 +347,20 @@ public class movementBloupy : MonoBehaviour
         }
     }
 
-    private void MoveLeft()
+    public void MoveLeft()
     {
         // sr.flipX = true;    //Flip the sprite
         //Max velocity check + movement
-        if (rb.velocity.magnitude < maxSpeed)
+        if (rb.velocity.magnitude < maxSpeed && isGrounded)
         {
             rb.AddForce(new Vector2(-acceleration, 0));
         }
     }
-    private void MoveRight()
+    public void MoveRight()
     {
         // sr.flipX = false;    //Don't flip the sprite
         //Max velocity check + movement
-        if (rb.velocity.magnitude < maxSpeed) rb.AddForce(new Vector2(acceleration, 0));
+        if (rb.velocity.magnitude < maxSpeed && isGrounded) rb.AddForce(new Vector2(acceleration, 0));
 
     }
     private void Move(float force)
@@ -367,7 +368,7 @@ public class movementBloupy : MonoBehaviour
         // sr.flipX = false;    //Don't flip the sprite
         //Max velocity check + movement
         if (rb.velocity.magnitude < maxSpeed) rb.AddForce(new Vector2(force, 0));
-
+        //if (rb.velocity.magnitude > maxSpeed) rb.velocity. = maxSpeed;
     }
 
     private void AirPositionHandle()
@@ -392,8 +393,9 @@ public class movementBloupy : MonoBehaviour
         }
     }
 
-    private void Jump(int direction)
+    public void Jump(int direction)
     {
+        if (!isGrounded) return;
         originalPos = transform.position;
         rb.velocity = new Vector2(0f, 0f);
         if (direction < 0)   //LEFT

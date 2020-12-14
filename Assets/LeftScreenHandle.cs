@@ -8,6 +8,8 @@ public class LeftScreenHandle : MonoBehaviour
 
     public float pressTime;
     public float releaseTime;
+    public Vector2 pressPos;
+
     private RightScreenHandle righttouch;
     private touchHandle touchHandle;
     private movementBloupy movementBloupy;
@@ -37,26 +39,47 @@ public class LeftScreenHandle : MonoBehaviour
                     switch (currenttouch.phase)
                     {
                         case TouchPhase.Began:
-                           // Debug.Log("LEFT BEGAN");
+                         //   Debug.Log("LEFT BEGAN");
                             pressTime = Time.time;
+                            pressPos = it.position;
 
                             break;
 
                         case TouchPhase.Moved:
-                         //      Debug.Log("LEFT MOVED");
-                            DoubleTapHandler();
+                         //   Debug.Log("LEFT MOVED");
+                            // DoubleTapHandler();
+
+                            /*SWIPE HANDLER---------------------------------------------------*/
+                            float xZero = movementBloupy.PosTouchRatioX(pressPos.x);
+                            float xUn = movementBloupy.PosTouchRatioX(it.position.x);
+
+                            float yZero = movementBloupy.PosTouchRatioX(pressPos.y);
+                            float yUn = movementBloupy.PosTouchRatioX(it.position.y);
+
+                            float deltaX = Math.Abs(xUn - xZero);
+                            float deltaY = Math.Abs(yUn - yZero);
+
+                            float swipe = (float)Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+
+                            if (swipe > movementBloupy.swipeAcceptance)
+                            {
+                                movementBloupy.Jump(-1);
+                            }
+                            /*------------------------------------------------------------------*/
+
 
                             break;
 
                         case TouchPhase.Stationary:
-                          //      Debug.Log("LEFT STATIONARY");
-                            DoubleTapHandler();
-
+                         //   Debug.Log("LEFT STATIONARY");
+                            //  DoubleTapHandler();
+                            movementBloupy.MoveLeft();
                             break;
 
                         case TouchPhase.Ended:
+                          //  Debug.Log("LEFT ENDED");
                             releaseTime = Time.time; 
-
+                            /*
                             if (
                                 righttouch.currenttouch.phase == TouchPhase.Ended
                                 &&
@@ -69,7 +92,7 @@ public class LeftScreenHandle : MonoBehaviour
                                 movementBloupy.NeutralJump();
                             }
                             movementBloupy.SetIsPrepaNeutralJumping(false);
-
+                            */
                             break;
 
                         case TouchPhase.Canceled:
