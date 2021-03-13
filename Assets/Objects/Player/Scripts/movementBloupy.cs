@@ -13,8 +13,8 @@ public class movementBloupy : MonoBehaviour
     public float maxSpeed = 9f;        //Maximum speed player can go
     public float acceleration = 55f;   //Acceleration rate of the player
 
-    public float jumpStrenghtY = 15f;   //Jump strenght rate of the player
     public float jumpStrenghtX = 15f;   //Jump strenght rate of the player
+    public float jumpStrenghtY = 15f;   //Jump strenght rate of the player
     public float neutralJumpStrenght = 15f;   //Jump strenght rate of the player
     public float superJumpStrenghtX = 8f;
     public float superJumpStrenghtY = 20f;
@@ -26,7 +26,7 @@ public class movementBloupy : MonoBehaviour
     public float swipeAcceptance = 0f;
     public float doubleTapAcceptance = 0f;
 
-    private Rigidbody2D rb;              //Player's rigidBody
+    public Rigidbody2D rb;              //Player's rigidBody
     private Vector2 firstPosBloupy;     //First position of the player
     private bool isGrounded = false;    //If true the player is on the ground
     private bool isJumping = false;
@@ -63,7 +63,7 @@ public class movementBloupy : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(rb.velocity.magnitude);
+        
         touches = touchHandle.GetTouches();
         if (Input.touchCount > 0)
         {
@@ -74,7 +74,9 @@ public class movementBloupy : MonoBehaviour
 
     private void FixedUpdate()
     {
-       // NeutralJumpHandler();
+       // if (GetSpeed() > maxSpeed) rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
+        Debug.Log(GetSpeed());
+        // NeutralJumpHandler();
         SlidePlafondHandler();
         //AirPositionHandle();
         FallingHandler();
@@ -110,7 +112,7 @@ public class movementBloupy : MonoBehaviour
 
                         if (isGrounded)
                         {
-                            if (rb.velocity.magnitude >= maxSpeed)
+                            if (GetSpeed() >= maxSpeed)
                             {
                                 isSuperJumping = true;
                                 SuperJump(-1);
@@ -129,7 +131,7 @@ public class movementBloupy : MonoBehaviour
                         inputPressed = true;
                         if (isGrounded)
                         {
-                            if (rb.velocity.magnitude >= maxSpeed)
+                            if (GetSpeed() >= maxSpeed)
                             {
                                 isSuperJumping = true;
                                 SuperJump(1);
@@ -351,7 +353,7 @@ public class movementBloupy : MonoBehaviour
     {
         // sr.flipX = true;    //Flip the sprite
         //Max velocity check + movement
-        if (rb.velocity.magnitude < maxSpeed && isGrounded)
+        if (GetSpeed() < maxSpeed && isGrounded)
         {
             rb.AddForce(new Vector2(-acceleration, 0));
         }
@@ -360,15 +362,15 @@ public class movementBloupy : MonoBehaviour
     {
         // sr.flipX = false;    //Don't flip the sprite
         //Max velocity check + movement
-        if (rb.velocity.magnitude < maxSpeed && isGrounded) rb.AddForce(new Vector2(acceleration, 0));
+        if (GetSpeed() < maxSpeed && isGrounded) rb.AddForce(new Vector2(acceleration, 0));
 
     }
     private void Move(float force)
     {
         // sr.flipX = false;    //Don't flip the sprite
         //Max velocity check + movement
-        if (rb.velocity.magnitude < maxSpeed) rb.AddForce(new Vector2(force, 0));
-        //if (rb.velocity.magnitude > maxSpeed) rb.velocity. = maxSpeed;
+        if (GetSpeed() < maxSpeed) rb.AddForce(new Vector2(force, 0));
+        //if (GetSpeed() > maxSpeed) rb.velocity. = maxSpeed;
     }
 
     private void AirPositionHandle()
@@ -418,8 +420,9 @@ public class movementBloupy : MonoBehaviour
         }
     }
 
-    private void SuperJump(int direction)
+    public void SuperJump(int direction)
     {
+        if (!isGrounded) return;
         originalPos = transform.position;
         rb.velocity = new Vector2(0f, 0f);
         if (direction < 0)   //LEFT
@@ -435,6 +438,11 @@ public class movementBloupy : MonoBehaviour
         {
             isFalling = true;
         }
+    }
+
+    public float GetSpeed()
+    {
+        return Math.Abs(rb.velocity.x);
     }
 
     public void ResetPosition()
@@ -467,7 +475,7 @@ public class movementBloupy : MonoBehaviour
         if (Input.GetButtonUp("Horizontal"))
         {
             inputPressed = true; 
-            rb.AddForce(new Vector2(-rb.velocity.magnitude, 0));
+            rb.AddForce(new Vector2(-GetSpeed(), 0));
         }
     }
 

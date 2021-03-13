@@ -6,18 +6,22 @@ using UnityEngine;
 public class LeftScreenHandle : MonoBehaviour
 {
 
-    public float pressTime;
-    public float releaseTime;
-    public Vector2 pressPos;
-
-    private RightScreenHandle righttouch;
+    private RightScreenHandle rightTouch;
     private touchHandle touchHandle;
     private movementBloupy movementBloupy;
+
+    public float pressTime;
+    public float releaseTime;
+    public float superJumpSpeedCap;
+
+    public Vector2 pressPos;
+
     public Touch currenttouch;
-    // Use this for initialization
+    // Use this for initialization+
+
     void Start()
     {
-        righttouch = GameObject.Find("Bloupy").GetComponent<RightScreenHandle>();
+        rightTouch = GameObject.Find("Bloupy").GetComponent<RightScreenHandle>();
         touchHandle = GameObject.Find("Bloupy").GetComponent<touchHandle>();
         movementBloupy = GameObject.Find("Bloupy").GetComponent<movementBloupy>();
 
@@ -26,8 +30,11 @@ public class LeftScreenHandle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // Debug.Log(movementBloupy.GetIsPrepaNeutralJumping());
-       // Debug.Log(movementBloupy.GetIsGrounded());
+
+        superJumpSpeedCap = rightTouch.superJumpSpeedCap;       //left touch superJumpSpeedCap is the same than rightTouch.superJumpSpeedCap  
+
+        // Debug.Log(movementBloupy.GetIsPrepaNeutralJumping());
+        // Debug.Log(movementBloupy.GetIsGrounded());
         if (Input.touchCount != 0)
         {
             foreach (var it in Input.touches)
@@ -63,7 +70,18 @@ public class LeftScreenHandle : MonoBehaviour
 
                             if (swipe > movementBloupy.swipeAcceptance)
                             {
-                                movementBloupy.Jump(-1);
+                                if (movementBloupy.GetSpeed() < movementBloupy.maxSpeed* superJumpSpeedCap)
+                                {
+                                    movementBloupy.Jump(-1);
+                                }
+                                else
+                                {
+                                    movementBloupy.SuperJump(-1);
+                                }
+                            }
+                            else
+                            {
+                                movementBloupy.MoveLeft();
                             }
                             /*------------------------------------------------------------------*/
 
@@ -115,12 +133,12 @@ public class LeftScreenHandle : MonoBehaviour
     void DoubleTapHandler()
     {
         if (
-            Math.Abs(pressTime - righttouch.pressTime) < movementBloupy.doubleTapAcceptance
+            Math.Abs(pressTime - rightTouch.pressTime) < movementBloupy.doubleTapAcceptance
             &&
             (
-                righttouch.currenttouch.phase == TouchPhase.Stationary
+                rightTouch.currenttouch.phase == TouchPhase.Stationary
                 ||
-                righttouch.currenttouch.phase == TouchPhase.Moved
+                rightTouch.currenttouch.phase == TouchPhase.Moved
             )
             &&
             (
@@ -133,7 +151,7 @@ public class LeftScreenHandle : MonoBehaviour
             //DOUBLE TAP WITHIN DOUBLE TAP ACCEPTANCE
 
             movementBloupy.SetIsPrepaNeutralJumping(true);
-            Debug.Log("LEFT DOUBLE TAP TIME :" + Math.Abs(pressTime - righttouch.pressTime));
+            Debug.Log("LEFT DOUBLE TAP TIME :" + Math.Abs(pressTime - rightTouch.pressTime));
             movementBloupy.GetRigidbody2D().velocity = new Vector2(0f, 0f);
         }
     }

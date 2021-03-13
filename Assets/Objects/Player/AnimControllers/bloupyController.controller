@@ -89,11 +89,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: grounded
-    m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: classicJump
+    m_ConditionEvent: inputJump
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5239718960486095638}
@@ -1123,7 +1120,7 @@ AnimatorStateMachine:
     m_Position: {x: -190, y: 1310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5239718960486095638}
-    m_Position: {x: -140, y: -310, z: 0}
+    m_Position: {x: -430, y: -510, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5774667791446687510}
     m_Position: {x: 1590, y: -560, z: 0}
@@ -2142,7 +2139,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: speed
-    m_EventTreshold: 8.8
+    m_EventTreshold: 8
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -879381684729829184}
   m_Solo: 0
@@ -2512,11 +2509,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: grounded
-    m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: classicJump
+    m_ConditionEvent: inputJump
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5239718960486095638}
@@ -2709,6 +2703,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: inputJump
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: speed
+    m_EventTreshold: 8.8
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5239718960486095638}
   m_Solo: 0
@@ -2872,9 +2869,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: grounded
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: classicJump
     m_EventTreshold: 0

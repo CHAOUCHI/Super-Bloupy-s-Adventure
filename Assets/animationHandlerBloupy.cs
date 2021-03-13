@@ -69,8 +69,8 @@ public class animationHandlerBloupy : MonoBehaviour
     private void SpeedHandler()
     {
         //Share to the animator Tspeed of bloupy-----------------//
-       // Debug.Log(rb.velocity.magnitude);
-        animator.SetFloat("speed", rb.velocity.magnitude);
+        // Debug.Log(GetSpeed());
+        animator.SetFloat("speed", movementBloupy.GetSpeed());
     }
 
     private void HorizontalInputHandlerPC()

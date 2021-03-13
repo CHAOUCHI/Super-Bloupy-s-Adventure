@@ -8,16 +8,18 @@ public class RightScreenHandle : MonoBehaviour
     public float pressTime;
     public float releaseTime;
     public Vector2 pressPos;
-    private LeftScreenHandle lefttouch;
+    public float superJumpSpeedCap = 0.90F;
+    private LeftScreenHandle leftTouch;
     private touchHandle touchHandle;
     private movementBloupy movementBloupy;
+    
     public Touch currenttouch;
 
 
     // Use this for initialization
     void Start()
     {
-        lefttouch = GameObject.Find("Bloupy").GetComponent<LeftScreenHandle>();
+        leftTouch = GameObject.Find("Bloupy").GetComponent<LeftScreenHandle>();
         touchHandle = GameObject.Find("Bloupy").GetComponent<touchHandle>();
         movementBloupy = GameObject.Find("Bloupy").GetComponent<movementBloupy>();
 
@@ -62,7 +64,19 @@ public class RightScreenHandle : MonoBehaviour
                             
                             if ( swipe > movementBloupy.swipeAcceptance)
                             {
-                                movementBloupy.Jump(1);
+                                if (movementBloupy.GetSpeed() < movementBloupy.maxSpeed*superJumpSpeedCap)
+                                {
+                                    movementBloupy.Jump(1);
+                                }
+                                else
+                                {
+                                    movementBloupy.SuperJump(1);
+                                }
+
+                            }
+                            else
+                            {
+                                movementBloupy.MoveRight();
                             }
                             /*------------------------------------------------------------------*/
                             break;
@@ -76,10 +90,10 @@ public class RightScreenHandle : MonoBehaviour
 
                         case TouchPhase.Ended:
                           //  Debug.Log("RIGHT ENDED");
-                            /*
+                            
 
                             releaseTime = Time.time;
-
+                            /*
                             if (
                                 currenttouch.phase == TouchPhase.Ended
                                 &&
@@ -114,12 +128,12 @@ public class RightScreenHandle : MonoBehaviour
     void DoubleTapHandler()
     {
         if (
-            Math.Abs(lefttouch.pressTime - pressTime) < movementBloupy.doubleTapAcceptance
+            Math.Abs(leftTouch.pressTime - pressTime) < movementBloupy.doubleTapAcceptance
             &&
             (
-                lefttouch.currenttouch.phase == TouchPhase.Stationary 
+                leftTouch.currenttouch.phase == TouchPhase.Stationary 
                 ||
-                lefttouch.currenttouch.phase == TouchPhase.Moved
+                leftTouch.currenttouch.phase == TouchPhase.Moved
             )
             &&
             (
@@ -130,7 +144,7 @@ public class RightScreenHandle : MonoBehaviour
             )
         {
             movementBloupy.SetIsPrepaNeutralJumping(true);
-            Debug.Log("RIGHT DOUBLE TAP TIME :" + Math.Abs(pressTime - lefttouch.pressTime));
+            Debug.Log("RIGHT DOUBLE TAP TIME :" + Math.Abs(pressTime - leftTouch.pressTime));
 
             movementBloupy.GetRigidbody2D().velocity = new Vector2(0f, 0f);
         }
