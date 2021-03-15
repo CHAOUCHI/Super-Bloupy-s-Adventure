@@ -40,7 +40,7 @@ public class movementBloupy : MonoBehaviour
     private touchHandle touchHandle;
     private Touch[] touches;
     private Touch lastTouch;
-    private Vector2 originalPos;
+    public Vector2 originalPos;
     private float firstTouchTimeRelease;
     private float lastTouchTimeRelease;
     private float firstTouchTimePress;
@@ -75,7 +75,7 @@ public class movementBloupy : MonoBehaviour
     private void FixedUpdate()
     {
        // if (GetSpeed() > maxSpeed) rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
-        Debug.Log(GetSpeed());
+        //Debug.Log(GetSpeed());
         // NeutralJumpHandler();
         SlidePlafondHandler();
         //AirPositionHandle();
@@ -175,11 +175,12 @@ public class movementBloupy : MonoBehaviour
                     inputPressed = true;
                     if (!isGrounded)
                     {
-                        if (rb.velocity.y < 0)// AIR CONTROL LEFT
+                        if (rb.velocity.y < 0)  //BLOUPY IS FALLING
                         {
 
                             if (transform.localScale.x > 0 && transform.position.x > originalPos.x)     //sprite to the right
                             {
+                                // AIR CONTROL LEFT
                                 Move(-Mathf.Abs(aircontrol));
                             }
                             break;
@@ -198,10 +199,11 @@ public class movementBloupy : MonoBehaviour
                     inputPressed = true;
                     if (!isGrounded)
                     {
-                        if (rb.velocity.y < 0)  // AIR CONTROL RIGHT
+                        if (rb.velocity.y < 0)  //BLOUPY IS FALLING
                         {
                             if (transform.localScale.x < 0 && transform.position.x < originalPos.x)     //sprite to the left
                             {
+                                // AIR CONTROL right
                                 Move(Mathf.Abs(aircontrol));
                             }
                             break;
@@ -365,7 +367,7 @@ public class movementBloupy : MonoBehaviour
         if (GetSpeed() < maxSpeed && isGrounded) rb.AddForce(new Vector2(acceleration, 0));
 
     }
-    private void Move(float force)
+    public void Move(float force)
     {
         // sr.flipX = false;    //Don't flip the sprite
         //Max velocity check + movement
@@ -412,11 +414,12 @@ public class movementBloupy : MonoBehaviour
         if (isGrounded)
         {
             originalPos = transform.position;
-            rb.velocity = new Vector2(0f, 0f);
-            rb.velocity = new Vector2(0, neutralJumpStrenght);
+
             isNeutralJumping = true;
             isPrepaNeutralJumping = false;
             isJumping = true;
+            rb.velocity = new Vector2(0f, 0f);
+            rb.velocity = new Vector2(0, neutralJumpStrenght);
         }
     }
 
@@ -520,7 +523,6 @@ public class movementBloupy : MonoBehaviour
     public bool GetIsPrepaNeutralJumping() { return isPrepaNeutralJumping; }
     public void SetIsPrepaNeutralJumping(bool b) { 
         isPrepaNeutralJumping = b; 
-        
     }
     public void SetIsClassicJumping(bool b) { isClassicJumping = b; }
     public bool GetIsClassicJumping() { return isClassicJumping; }

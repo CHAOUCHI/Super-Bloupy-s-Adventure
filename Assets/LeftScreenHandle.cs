@@ -32,29 +32,102 @@ public class LeftScreenHandle : MonoBehaviour
     {
 
         superJumpSpeedCap = rightTouch.superJumpSpeedCap;       //left touch superJumpSpeedCap is the same than rightTouch.superJumpSpeedCap  
+        InputHandler();
+       // DoubleTapHandler();
+        //DoubleReleaseHandler();
+    }
 
-        // Debug.Log(movementBloupy.GetIsPrepaNeutralJumping());
-        // Debug.Log(movementBloupy.GetIsGrounded());
+    void DoubleReleaseHandler()
+    {
+        if (
+            Math.Abs(releaseTime - rightTouch.releaseTime) < movementBloupy.doubleTapAcceptance
+            &&
+            movementBloupy.GetIsPrepaNeutralJumping()
+            &&
+            Math.Abs(pressTime - releaseTime) >= movementBloupy.neutralJumpMinimumHolding
+            &&
+            Math.Abs(rightTouch.pressTime - rightTouch.releaseTime) >= movementBloupy.neutralJumpMinimumHolding
+            )
+        {
+            movementBloupy.NeutralJump();
+        }
+    }
+
+    /*
+    RETURN VALUE : IsPrepaNeutralJumping  
+    */
+    Boolean DoubleTapHandler()
+    {
+
+        if (
+            Math.Abs(pressTime - rightTouch.pressTime) < movementBloupy.doubleTapAcceptance  //DOUBLE TAP ACCEPTANCE
+            &&
+            (
+                rightTouch.currenttouch.phase == TouchPhase.Stationary
+                ||
+                rightTouch.currenttouch.phase == TouchPhase.Moved
+            )
+            &&
+            (
+                currenttouch.phase == TouchPhase.Stationary
+                ||
+                currenttouch.phase == TouchPhase.Moved
+            )
+            &&
+            movementBloupy.GetIsGrounded()
+            )
+        {
+            //DOUBLE TAP WITHIN DOUBLE TAP ACCEPTANCE
+
+            movementBloupy.SetIsPrepaNeutralJumping(true);
+           // Debug.Log("LEFT DOUBLE TAP TIME :" + Math.Abs(pressTime - rightTouch.pressTime));
+            movementBloupy.GetRigidbody2D().velocity = new Vector2(0f, 0f);
+        }
+        else
+        {
+            movementBloupy.SetIsPrepaNeutralJumping(false);
+        }
+
+        return movementBloupy.GetIsPrepaNeutralJumping();
+
+    }
+
+    void InputHandler()
+    {
         if (Input.touchCount != 0)
         {
             foreach (var it in Input.touches)
             {
-                if (touchHandle.IsInLeftSide(it.position)) { 
-                    currenttouch = it; 
-                   // Debug.Log("LEFT");
+                if (touchHandle.IsInLeftSide(it.position))
+                {
+                    currenttouch = it;
+                    // Debug.Log("LEFT");
 
                     switch (currenttouch.phase)
                     {
                         case TouchPhase.Began:
-                         //   Debug.Log("LEFT BEGAN");
+                            //   Debug.Log("LEFT BEGAN");
                             pressTime = Time.time;
                             pressPos = it.position;
 
                             break;
 
                         case TouchPhase.Moved:
-                         //   Debug.Log("LEFT MOVED");
-                            // DoubleTapHandler();
+                            //      Debug.Log("LEFT MOVED");
+                            if (!movementBloupy.GetIsGrounded())
+                            {
+                                if (movementBloupy.rb.velocity.y < 0)  //BLOUPY IS FALLING
+                                {
+
+                               //     if (transform.localScale.x < 0 && transform.position.x > movementBloupy.originalPos.x)     //sprite to the right
+                                 //   {
+                                        // AIR CONTROL LEFT
+                                        movementBloupy.Move(-Mathf.Abs(movementBloupy.aircontrol));
+                                //    }
+                                    break;
+                                }
+                            }
+                            if (movementBloupy.GetIsPrepaNeutralJumping()) break;
 
                             /*SWIPE HANDLER---------------------------------------------------*/
                             float xZero = movementBloupy.PosTouchRatioX(pressPos.x);
@@ -70,7 +143,7 @@ public class LeftScreenHandle : MonoBehaviour
 
                             if (swipe > movementBloupy.swipeAcceptance)
                             {
-                                if (movementBloupy.GetSpeed() < movementBloupy.maxSpeed* superJumpSpeedCap)
+                                if (movementBloupy.GetSpeed() < movementBloupy.maxSpeed * superJumpSpeedCap)
                                 {
                                     movementBloupy.Jump(-1);
                                 }
@@ -79,7 +152,7 @@ public class LeftScreenHandle : MonoBehaviour
                                     movementBloupy.SuperJump(-1);
                                 }
                             }
-                            else
+                            else    //move left
                             {
                                 movementBloupy.MoveLeft();
                             }
@@ -89,32 +162,53 @@ public class LeftScreenHandle : MonoBehaviour
                             break;
 
                         case TouchPhase.Stationary:
-                         //   Debug.Log("LEFT STATIONARY");
-                            //  DoubleTapHandler();
+                            //   Debug.Log("LEFT STATIONARY");
+
+                            if (!movementBloupy.GetIsGrounded())
+                            {
+                                if (movementBloupy.rb.velocity.y < 0)  //BLOUPY IS FALLING
+                                {
+
+                                    //if (transform.localScale.x < 0 && transform.position.x < movementBloupy.originalPos.x)     //sprite to the left
+                                    //{
+                                        // AIR CONTROL LEFT
+                                        movementBloupy.Move(-Mathf.Abs(movementBloupy.aircontrol));
+                                   // }
+                                    break;
+                                }
+                            }
+
+                            if (movementBloupy.GetIsPrepaNeutralJumping()) break;
                             movementBloupy.MoveLeft();
                             break;
 
                         case TouchPhase.Ended:
-                          //  Debug.Log("LEFT ENDED");
-                            releaseTime = Time.time; 
+                            //  Debug.Log("LEFT ENDED");
+                            releaseTime = Time.time;
                             /*
                             if (
-                                righttouch.currenttouch.phase == TouchPhase.Ended
+                                rightTouch.currenttouch.phase == TouchPhase.Ended
                                 &&
-                                Math.Abs(pressTime - righttouch.releaseTime) >= movementBloupy.neutralJumpMinimumHolding
+                                Math.Abs(rightTouch.pressTime - rightTouch.releaseTime) >= movementBloupy.neutralJumpMinimumHolding
                                 &&
-                                Math.Abs(releaseTime - righttouch.releaseTime) < movementBloupy.doubleTapAcceptance
+                                Math.Abs(pressTime - releaseTime) >= movementBloupy.neutralJumpMinimumHolding
+                                &&
+                                Math.Abs(rightTouch.releaseTime - releaseTime) <= movementBloupy.doubleTapAcceptance
+                                &&
+                                movementBloupy.GetIsPrepaNeutralJumping()
                                 )
                             {
                                 //DOUBLE TAP RELEASE
+                                Debug.Log("NeutralJumpLeft");
                                 movementBloupy.NeutralJump();
+                                return;
                             }
-                            movementBloupy.SetIsPrepaNeutralJumping(false);
+                            //movementBloupy.SetIsPrepaNeutralJumping(false);
                             */
                             break;
 
                         case TouchPhase.Canceled:
-                           //   Debug.Log("LEFT CANCELED");
+                            //   Debug.Log("LEFT CANCELED");
 
                             break;
 
@@ -125,34 +219,7 @@ public class LeftScreenHandle : MonoBehaviour
                     break;
                 }
             }
-            
-        }
-        
-    }
 
-    void DoubleTapHandler()
-    {
-        if (
-            Math.Abs(pressTime - rightTouch.pressTime) < movementBloupy.doubleTapAcceptance
-            &&
-            (
-                rightTouch.currenttouch.phase == TouchPhase.Stationary
-                ||
-                rightTouch.currenttouch.phase == TouchPhase.Moved
-            )
-            &&
-            (
-                currenttouch.phase == TouchPhase.Stationary
-                ||
-                currenttouch.phase == TouchPhase.Moved
-            )
-            )
-        {
-            //DOUBLE TAP WITHIN DOUBLE TAP ACCEPTANCE
-
-            movementBloupy.SetIsPrepaNeutralJumping(true);
-            Debug.Log("LEFT DOUBLE TAP TIME :" + Math.Abs(pressTime - rightTouch.pressTime));
-            movementBloupy.GetRigidbody2D().velocity = new Vector2(0f, 0f);
         }
     }
 
