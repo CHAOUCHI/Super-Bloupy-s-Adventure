@@ -14,7 +14,7 @@ public class RightScreenHandle : MonoBehaviour
     private movementBloupy movementBloupy;
     
     public Touch currenttouch;
-
+    public float pressedtime = 0;
 
     // Use this for initialization
     void Start()
@@ -26,10 +26,10 @@ public class RightScreenHandle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Debug.Log(movementBloupy.GetIsPrepaNeutralJumping());
-        Debug.Log(Math.Abs(pressTime - releaseTime));
+        //Debug.Log(movementBloupy.GetIsPrepaNeutralJumping());
+       // Debug.Log(Math.Abs(pressTime - releaseTime));
         InputHandler();
         DoubleTapHandler();
         
@@ -75,6 +75,8 @@ public class RightScreenHandle : MonoBehaviour
             movementBloupy.GetIsGrounded()
             )
         {
+            Debug.Log("Set PREPA TO TRUE");
+            pressedtime = Math.Abs(pressTime - Time.time);
             movementBloupy.SetIsPrepaNeutralJumping(true);
            // Debug.Log("RIGHT DOUBLE TAP TIME :" + Math.Abs(pressTime - leftTouch.pressTime));
 
@@ -82,6 +84,7 @@ public class RightScreenHandle : MonoBehaviour
         }
         else
         {
+            Debug.Log("Set PREPA TO FALSE");
             movementBloupy.SetIsPrepaNeutralJumping(false);
         }
         return movementBloupy.GetIsPrepaNeutralJumping();

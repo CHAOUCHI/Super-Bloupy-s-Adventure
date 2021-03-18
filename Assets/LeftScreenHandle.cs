@@ -28,7 +28,7 @@ public class LeftScreenHandle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate    ()
     {
 
         superJumpSpeedCap = rightTouch.superJumpSpeedCap;       //left touch superJumpSpeedCap is the same than rightTouch.superJumpSpeedCap  

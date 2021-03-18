@@ -26,7 +26,9 @@ public class movementBloupy : MonoBehaviour
     public float swipeAcceptance = 0f;
     public float doubleTapAcceptance = 0f;
 
+    public Vector2 originalPos;
     public Rigidbody2D rb;              //Player's rigidBody
+
     private Vector2 firstPosBloupy;     //First position of the player
     private bool isGrounded = false;    //If true the player is on the ground
     private bool isJumping = false;
@@ -40,7 +42,6 @@ public class movementBloupy : MonoBehaviour
     private touchHandle touchHandle;
     private Touch[] touches;
     private Touch lastTouch;
-    public Vector2 originalPos;
     private float firstTouchTimeRelease;
     private float lastTouchTimeRelease;
     private float firstTouchTimePress;
